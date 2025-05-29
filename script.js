@@ -16,7 +16,7 @@ function validarFormulario() {
   if (!soloNumeros.test(dni) || dni.length !== 8) errores.push("DNI no válido.");
   
   const fecha = new Date(fechaNacimiento);
-  if (isNaN(fecha) || fecha.getFullYear() <= 2006) errores.push("Fecha de nacimiento no válida.");
+  if (isNaN(fecha) || fecha.getFullYear() < 2006) errores.push("Fecha de nacimiento no válida.");
 
   if (!emailRegex.test(email)) errores.push("Email no válido.");
 
