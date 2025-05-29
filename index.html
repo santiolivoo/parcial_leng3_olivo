@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Formulario de Registración - OLIVO SANTIAGO</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <div class="container">
+    <h2>Formulario de Registración</h2>
+    <form id="registrationForm">
+      <label>Apellido: <input type="text" id="apellido" required /></label>
+      <label>Nombre: <input type="text" id="nombre" required /></label>
+      <label>DNI: <input type="text" id="dni" maxlength="8" required /></label>
+      <label>Fecha de Nacimiento: <input type="date" id="fechaNacimiento" required /></label>
+      <label>Email: <input type="email" id="email" required /></label>
+      <button type="button" onclick="validarFormulario()">Validar</button>
+    </form>
+    <hr/>
+    <button onclick="preguntar()">Preguntas personales</button>
+    <div id="respuestas"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
